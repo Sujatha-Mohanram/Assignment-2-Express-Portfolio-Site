@@ -2,7 +2,7 @@
 /*
 Student Number : 301152761
 Student Name: Sujatha Mohanram
-Assignment : 1
+Assignment : 2
 */
 nav {
     background-color: pink;
@@ -26,5 +26,14 @@ p{
     font-family: "Cursive";
     font-style: italic;
     color:darkmagenta;
-    font-size: large;
+    font-size: medium;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: pink !important;
+    border-color: #b8860b !important;
+    
+}
+.btn-secondary{
+    background-color: pink !important;
+    border-color: #b8860b !important;
 }

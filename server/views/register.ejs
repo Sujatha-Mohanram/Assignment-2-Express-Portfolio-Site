@@ -1,0 +1,142 @@
+<!--
+Student Number : 301152761
+Student Name: Sujatha Mohanram
+Assignment : 2
+-->
+    <div><h1></h1></div>
+    <div class="col-md-6 align-items-center bgcolor-pink">
+         <h1 class="logotext">Add Business Contact</h1>
+     </div>
+     <div></div>
+      </div>
+     
+     <div><h1></h1></div>
+     <div class="card-body d-flex flex-column col-md-6 align-items-center">
+      <div class="card-body d-flex flex-column col-md-8 align-items-center bgcolor-pink" style="border:1px solid  #b8860b">
+          <h4 class="logotext"></h4> 
+<div class="container">
+    <div class="card-body d-flex flex-column align-items-center bgcolor-pink">
+      <div>
+        <h1 class="text-center mb-3 logotext"><i class="fas fa-user-plus"></i> Register </h1>
+        <div>
+          <%- include ("./partials/messages"); %>
+        </div>
+       <p> </p>
+         <form action="/users/register" method="POST">
+          <div class="form-group">
+            <div class="container" >
+              <div class="row">
+                <div class="col-sm-4">
+            <p><label for="fullname">Full Name</label></p></div>
+            <div class="col-sm-8">
+            <p><input
+              type="fullname"
+              id="fullname"
+              name="fullname"
+              class="form-control"
+              placeholder="Enter Full Name"
+              value="<%= typeof fullname != 'undefined' ? fullname : '' %>"
+              required /></p></div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-4">
+            <p><label for="email">Email</label></p></div>
+           
+              <div class="col-sm-8">
+          <p>  <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter Email"
+              value="<%= typeof email != 'undefined' ? email : '' %>"
+              required/></p></div></div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-4">
+              <p><label for="phone">Phone Number</label></p></div>
+             
+                <div class="col-sm-8">
+            <p>  <input
+                type="number"
+                id="phone"
+                name="phone"
+                class="form-control"
+                placeholder="Enter Phone Number"
+                value="<%= typeof phone != 'undefined' ? phone : '' %>"
+                required /></p></div></div>
+          <div class="form-group">
+            <div class="container" >
+              <div class="row">
+                <div class="col-sm-4">
+            <p><label for="name">User Name</label></p></div>
+            <div class="col-sm-8">
+            <p><input
+              type="name"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Enter Name"
+              value="<%= typeof name != 'undefined' ? name : '' %>"
+              required/></p></div>
+          </div>
+        
+            <div class="form-group">
+          <div class="row">
+            <div class="col-sm-4">
+         
+           <p> <label for="password">Password</label></p></div>
+            <div class="col-sm-8">
+            <p><input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Create Password"
+              value="<%= typeof password != 'undefined' ? password : '' %>"
+            required /></p></div></div>
+                   
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-4">
+            <p><label for="password2">Confirm Password</label></p></div>
+            <div class="col-sm-8">
+              <p><input
+              type="password"
+              id="password2"
+              name="password2"
+              class="form-control"
+              placeholder="Confirm Password"
+              value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+              required /></p></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-8">
+          <button type="submit" class="btn btn-primary btn-block"><span class="logotext">  <i class="fas fa-edit"></i>
+            Register
+          </span></button>
+          <a href="" class="btn btn-warning"><span class="logotext"> <i class="fas fa-undo"></i>Reset</a></span>
+          
+          </div>
+        </form>
+        <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+      </div>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+  crossorigin="anonymous"
+></script>

@@ -1,0 +1,47 @@
+<!--/*
+Student Number : 301152761
+Student Name: Sujatha Mohanram
+Assignment : 2
+
+*/-->
+
+<main class="container">
+    <div class="row">
+       <div class="">
+           <h1 class="logotext">Business Contact List</h1>
+               <a href="/users/register" class="btn btn-primary" role="button">
+                <span class="logotext">  <i class="fas fa-plus-circle"></i> Add a Contact
+               </a></span>
+               <br>
+               <div class="table table-light justify-content-center">
+               <table class="table table-striped  table-hover table-bordered table-sm">
+                   <!--header row-->
+                   <thead>
+                   <tr>
+                       <th class="text-center align-middle"><p>Contact Name</p></th>
+                       
+                       <th class="text-center align-middle"><p>Email Address</p></th>
+                       
+                       <th class="text-center align-middle"><p>Phone Number</p></th>
+                       <th class="text-center thead-light align-middle"><p> Username </p></th>
+                       <th class="text-center align-middle"><p></p></th>
+                       <th class="text-center thead-light align-middle"><p></p></th>
+                   </tr>
+                   </thead>
+                   <!--Repeatable template row-->
+                <%for(let count=0; count<BusinessContactList.length; count++ ){%>
+                  <tr>
+                      <td class="text-center align-middle"><p><%=BusinessContactList[count].fullname%></p></td>
+                      <td class="text-center align-middle"><p><%=BusinessContactList[count].email%></p></td>
+                      <td class="text-center align-middle"><p><%=BusinessContactList[count].phone%></p></td>
+                      <td class="text-center align-middle"><p><%=BusinessContactList[count].name%></p></td>
+                      <td class="text-center align-middle"><p><a href="/users/editContact/<%=BusinessContactList[count]._id%>" class="btn btn-primary btn-sm"><span class="logotext"><i class="fas fa-pencil-alt"></i> Edit</a></span></p></td>
+                      <td class="text-center align-middle"><p><a href="/users/delete/<%=BusinessContactList[count]._id%>" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</a></p></td>
+                  </tr>
+                  <%}%>
+               </table>
+           </div>
+       </div>
+    </div>
+   
+   </main>

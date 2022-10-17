@@ -6,9 +6,9 @@
 /*
 Student Number : 301152761
 Student Name: Sujatha Mohanram
-Assignment : 1
+Assignment : 2
 */
-var app = require('./app');
+var app = require('./server/config/app');
 var debug = require('debug')('assignment-express-portfolio-site:server');
 var http = require('http');
 
